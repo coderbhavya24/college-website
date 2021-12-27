@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MY COLLEGE</title>
+    <title>ST.Georges College</title>
     <style>
       body {
         margin: 0px;
@@ -18,6 +18,7 @@
       .bio:hover {
         font-size: 25px;
       }
+
       .my_menu {
         position: absolute;
         width: 100%;
@@ -77,16 +78,17 @@
         margin: 0 auto;
         width: 300px;
         font-size: 30px;
+        border-bottom: 2px solid black;
       }
       .sec1 {
         width: 20%;
-        height: 300px;
+        height: auto;
         margin: 30px;
         float: left;
       }
       .icon {
         width: 120px;
-        height: 120px;
+        height: auto;
         border: 1px solid black;
         margin: 10px auto;
         line-height: 120px;
@@ -107,16 +109,17 @@
         margin: 0 auto;
         width: 300px;
         font-size: 30px;
+        border-bottom: 2px solid black;
       }
       .sec1 {
         width: 20%;
-        height: 300px;
+        height: auto;
         margin: 30px;
         float: left;
       }
       .icon {
         width: 120px;
-        height: 120px;
+        height: auto;
         border: 1px solid black;
         margin: 10px auto;
         line-height: 120px;
@@ -128,6 +131,82 @@
       }
       .icon:hover {
         font-size: 40px;
+      }
+      .sec2 {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+      }
+      .sec2 h1 {
+        margin: 0 auto;
+        width: 400px;
+        font-size: 30px;
+        border-bottom: 2px solid black;
+      }
+      .divsec2 {
+        width: 30%;
+        height: auto;
+        margin: 20px;
+        float: left;
+      }
+      .divsec2 img {
+        width: 100%;
+      }
+      .footer {
+        width: 100%;
+        background-color: black;
+        height: 300px;
+      }
+      .footerdiv {
+        width: 20%;
+        height: auto;
+        margin: 30px;
+        float: left;
+      }
+      .footerdiv h1 {
+        text-align: center;
+        color: red;
+      }
+      .footerdiv p {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+      }
+      .footerdiv ul {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+      }
+      #handles a {
+        color: white;
+        font-size: 20px;
+        transition-duration: 0.3s;
+      }
+      #handles a:hover {
+        font-size: 30px;
+        color: yellowgreen;
+      }
+      #contactus a {
+        color: white;
+        font-size: 20px;
+        transition-duration: 0.3s;
+      }
+      #contactus a:hover {
+        font-size: 30px;
+        color: yellowgreen;
+      }
+      .footer1 {
+        float: left;
+        margin-left: 30px;
+      }
+      .footer2 {
+        float: right;
+        margin-right: 30px;
+      }
+      .footer3 {
+          text-align:center;
+          margin-top: 10px;
+          font-style: italic;
       }
     </style>
     <!--Used font-awesome for implementing some icons code-->
@@ -149,19 +228,17 @@
     <div class="my_menu">
       <ul class="menu">
         <li>
-          <a
-            href="https://en.wikipedia.org/wiki/St._George%27s_College,_Agra"
-            target="_blank"
+          <a href="index.html"
             ><img class="logo" src="/college logo.jpg" alt=""
           /></a>
         </li>
         <li>
           <a href="#">About <i class="fa fa-angle-down"></i></a>
           <ul>
-            <li><a href="#">Rules and Regulations</a></li>
-            <li><a href="#">Campus</a></li>
-            <li><a href="#">Hostel life</a></li>
-            <li><a href="#">Fests and Events</a></li>
+            <li><a href="/Aboutcollege.html" target="_blank">College</a></li>
+            <li><a href="/Campus.html" target="_blank">Campus</a></li>
+            <li><a href="/Hostel.html" target="_blank">Hostel life</a></li>
+            <li><a href="#">Fees Structure</a></li>
             <li><a href="#">Placements</a></li>
           </ul>
         </li>
@@ -176,10 +253,10 @@
         <li>
           <a href="#">Departments <i class="fa fa-angle-down"></i></a>
           <ul>
-            <li><a href="#">COMPUTER SCIENCE</a></li>
-            <li><a href="#">MECHANICAL</a></li>
-            <li><a href="#">ELECTRONICS</a></li>
-            <li><a href="#">CIVIL</a></li>
+            <li><a href="/Computerscience.html" target="_blank">COMPUTER SCIENCE</a></li>
+            <li><a href="/Mechanical.html" target="_blank">MECHANICAL</a></li>
+            <li><a href="/Electronics.html" target="_blank">ELECTRONICS</a></li>
+            <li><a href="/civil.html" target="_blank">CIVIL</a></li>
           </ul>
         </li>
         <li>
@@ -194,8 +271,8 @@
         <li>
           <a href="#">Contact us <i class="fa fa-angle-down"></i></a>
           <ul>
-            <li><a href="#">TOLL-FREE number</a></li>
-            <li><a href="#">E-mail</a></li>
+            <li><a href="#">Contact no.</a></li>
+            <li><a href="mailto:vratant2012061@akgec.ac.in">E-mail</a></li>
           </ul>
         </li>
       </ul>
@@ -205,7 +282,7 @@
       <img src="/admission-banner-2021-22.jpg" alt="Adimissions open" />
     </div>
     <!--Key Features-->
-    <div class="KeyFeatures">
+    <section class="KeyFeatures">
       <br />
       <br />
       <br />
@@ -214,73 +291,176 @@
         <div class="icon"><i class="fa fa-book"></i></div>
         <h2>Quality Education</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-          dolorem.
+          Best quality of education in provided both in terms of written or
+          practical knowledge.We assure you the best faculty team for quality
+          education.
         </p>
       </div>
       <div class="sec1">
         <div class="icon"><i class="fa fa-suitcase"></i></div>
         <h2>Placements</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-          dolorem.
+          St.Georges believes that each student is a valuable resource. The
+          placement cell focuses on each student to maximize his/her career
+          prospects and assists him/her in achieving the same.
         </p>
       </div>
       <div class="sec1">
         <div class="icon"><i class="fa fa-flask"></i></div>
         <h2>Physical Labs</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-          dolorem.
+          All laboratories are made availabe to the students with all the
+          required equipments there for the betterment of their practical
+          skills.
         </p>
       </div>
       <div class="sec1">
-        <div class="icon"><i class="fa fa-user"></i></div>
+        <div class="icon"><i class="fa fa-users"></i></div>
         <h2>Experienced Faculties</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-          dolorem.
+          Highly experienced and knowledgeble faculty members are continuously
+          working for delivering the best knowledge to the students and helping
+          them in mastering their respective subjects.
         </p>
       </div>
-    </div>
+    </section>
     <!--information-->
-    <div class="info">
+    <section class="info">
       <br />
       <br />
       <br />
       <h1>Facts Describing Our Excellence</h1>
       <div class="sec1">
-        <div class="icon"><i class="fa fa-amazon"></i></div>
+        <div class="icon"><i class="fa fa-check"></i></div>
         <h2>Companies Arriving</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-          dolorem.
+          Infosys,Wipro,LAVA,HCL,GlobalLogic,Jackson,OSS
+          CUBE,Adobe,Flipkart,Samsung,Tech Mahindra etc.
         </p>
       </div>
       <div class="sec1">
         <div class="icon"><i class="fa fa-trophy"></i></div>
         <h2>Toppers hub</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-          dolorem.
+          Majority of Aktu gold medalists comes from this campus making us proud
+          everytime.
         </p>
       </div>
       <div class="sec1">
         <div class="icon"><i class="fa fa-male"></i></div>
         <h2>Alumini Network</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-          dolorem.
+          Glad after having such a great alumini network not just in India but
+          also in other countries.
         </p>
       </div>
       <div class="sec1">
-        <div class="icon"><i class="fa fa-free-code-camp"></i></div>
+        <div class="icon"><i class="fa fa-fire"></i></div>
         <h2>NIRF Ranking</h2>
+        <p>251-300. One of the best NIRF ranked college of Uttar Pradesh.</p>
+      </div>
+    </section>
+    <!--Extra Curricular-->
+    <section class="sec2">
+      <br />
+      <br />
+
+      <h1>Extra Curricular Activities</h1>
+      <br />
+      <br />
+      <div class="divsec2">
+        <img src="/sports.jpg" alt="Sports Event" />
+        <h2>Sports Event</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-          dolorem.
+          SAKSHAM is the inter-departmental annual college sports fest at
+          St.Georges College. The event spanning over almost two months
+          witnessed a massive participation of more than 500 students in about
+          25 team events and 22 individual sports including badminton,
+          volleyball, basketball, football, athletics, cricket, table tennis,
+          tug-of-war, chess, carom, pool, kabaddi, kho-kho, athletics and power
+          lifting.
         </p>
       </div>
+      <div class="divsec2">
+        <img src="/Freshers.jpg" alt="Freshers Party" />
+        <h2>Freshers Party</h2>
+        <p>
+          Pulsating ambience, flashing lights, and foot tapping music, marked
+          the dawn of SAHASRA’ 2019 – The Freshers’ Party for St.Georges B.Tech,
+          St.Georges MCA newly admitted students. The excitement inflated to a
+          high as performances graced the stage. Joy and happiness could be seen
+          on the faces all around.
+        </p>
+      </div>
+      <div class="divsec2">
+        <img src="/garba20193.jpg" alt="Sports Event" />
+        <h2>GARBA Navratri festival</h2>
+        <p>
+          KRITAGYA’19, the Garba Night at St.Georges brought forward for us a
+          tide of happiness and hope that left behind a memory that will be
+          remembered as an oasis of serendipity. The beautifully and intricately
+          decorated premises of Girls Hostel welcomed the dignitaries including
+          our Director General, Dr. R.K. Agarwal, Dean Student Welfare, Dean
+          Hostels, Proctor, Heads of Departments, Section Incharges and faculty
+          and their families to the To the annual Garba night celebration.
+        </p>
+      </div>
+    </section>
+    <!--Footer-->
+    <section class="footer">
+      <div class="footerdiv">
+        <h1>About US</h1>
+        <p>
+          St.Georges College offers four year under graduate B.Tech course in
+          ten engineering branches, two year post graduate M.Tech course in four
+          engineering branches and two year post graduate MCA course.
+        </p>
+      </div>
+      <div class="footerdiv">
+        <h1>Address</h1>
+        <ul>
+          <li>
+            3 Garden Road Baluganj Agra,<br />
+            Uttarpradesh
+          </li>
+        </ul>
+      </div>
+      <div class="footerdiv">
+        <div id="handles">
+          <h1>Social links</h1>
+          <ul>
+            <li>
+              <a href=https://www.instagram.com> INSTAGRAM </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/">FACEBOOK</a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+                >TWITTER</a
+              >
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/home">LINKEDIN<i class="fa fa-linkedin-square"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerdiv">
+        <div id="contactus">
+          <h1>Contact Us</h1>
+          <ul>
+            <li>Contact no.:xxxxxxxxxx</li>
+            <li><a href="mailto:vratant2012061@akgec.ac.in">E-mail</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="belowfooter">
+      <div class="footer1"><p>Copyright © All Rights Reserved</p></div>
+      <div class="footer2"><p>Designed by Vratant Singh</p></div>
+      <div class="footer3"><a href="#">Jump to Top</a></div>
     </div>
   </body>
 </html>
