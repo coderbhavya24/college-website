@@ -20,11 +20,12 @@
         background-size: 100% 100%;
         outline: 2px solid black;       
         
-        height: 500px;
+        height: 350px;
         
         width: 100%;
       }
       .bio h1{
+        
         text-align: center;
         font-size: 50px;
         transition-duration: 0.3s;
@@ -39,7 +40,7 @@
         text-align: center;
         font-size: 30px;
         transition-duration: 0.3s;
-        color: black;
+        color: blue;
         text-decoration: underline solid black;
       }
       .bio:hover h2{
@@ -90,6 +91,55 @@
       }
       .menu li ul li {
         list-style-type: disc;
+      }
+      #outerbox {
+      
+        width: 100%;
+        overflow: hidden;
+        height: 400px;
+      }
+      #sliderbox {
+        position: relative;
+        width:6000px;
+        animation-name: slideshow;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+      }
+      #sliderbox img {
+        float: left;
+      }
+      @keyframes slideshow {
+        0% {
+          left: 0px;
+        }
+        20% {
+          left: 0px;
+        }
+        25%
+        {
+          left: -1500px;
+        }
+        45%
+        {
+          left: -1500px;
+        }
+        50%
+        {
+          left: -3000px;
+        }
+        70%{
+          left: -3000px;
+        }
+        75%{
+          left: -4500px;
+        }
+        95%{
+          left: -4500px;
+        }
+        
+        100% {
+          left: -6000px;
+        }
       }
       .banner {
         width: 100%;
@@ -315,6 +365,16 @@
     <div class="banner">
     <img src="/admission-banner-2021-22.jpg" alt="Adimissions open" />       
       
+    </div>
+    <div id="outerbox">
+      <div id="sliderbox">
+        <img src="/slider/web-richmond-cover-1500-x-400-px.png" alt="" />
+        <img src="/slider/historianimaginebanner.jpg" alt="" />
+        <img src="/slider/architecture-rnn-ltr.png" alt="" />
+        <img src="/slider/web-richmond-cover-1500-x-400-px.png" alt="" />
+       
+        
+      </div>
     </div>
     <!--Key Features-->
     <section class="KeyFeatures">
